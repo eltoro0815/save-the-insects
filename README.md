@@ -4,8 +4,7 @@ The list of insects is sortable by drag&drop in the frontend and saved in the ba
 
 PHP 8.0.2^
 
-Life Workspace with DDEV enabled: https://drud-ddevgitpodlaunch-xi9o8sxojzk.ws-eu86.gitpod.io/
-Life Example (needs Workspace to be run): https://8080-drud-ddevgitpodlaunch-xi9o8sxojzk.ws-eu86.gitpod.io/
+Snapshot: https://salmon-quokka-d43ycmi76t9.ws-eu86.gitpod.io/
 
 Ressources and Special Thanks to:
 * https://mikateach.com/setting-up-laravel-5-6-on-heroku/
