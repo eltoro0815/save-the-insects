@@ -62,4 +62,23 @@
 <script src="/js/app.js"></script>
 </body>
 
+<!-- Append the `?module` param to load the module version of `web-vitals` -->
+<script type="module">
+  import {onCLS, onFID, onLCP} from 'https://unpkg.com/web-vitals@3?module';
+
+  function sendToAnalytics(metric) {
+  // Replace with whatever serialization method you prefer.
+  // Note: JSON.stringify will likely include more data than you need.
+  const body = JSON.stringify(metric);
+
+  // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
+  (navigator.sendBeacon && navigator.sendBeacon('/api/webvitals', body)) ||
+    fetch('/api/webvitals', {body, method: 'POST', keepalive: true});
+}
+
+onCLS(sendToAnalytics);
+onFID(sendToAnalytics);
+onLCP(sendToAnalytics);
+</script>
+
 </html>

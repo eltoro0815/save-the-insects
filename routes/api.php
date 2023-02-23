@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/insects', 'App\Http\Controllers\InsectsController', [
     'except' => ['edit', 'show', 'create']
 ]);
+
+Route::resource('/webvitals', 'App\Http\Controllers\WebvitalsController');
