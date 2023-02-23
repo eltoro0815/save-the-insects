@@ -4,7 +4,8 @@ The list of insects is sortable by drag&drop in the frontend and saved in the ba
 
 PHP 8.0.2^
 
-HOW TO RUN: Clone the repo and you can start the server with "ddev start"
+Live Example on HEROKU + DB4FREE.net:
+https://save-the-insects.herokuapp.com/
 
 Ressources and Special Thanks to:
 * https://mikateach.com/setting-up-laravel-5-6-on-heroku/
