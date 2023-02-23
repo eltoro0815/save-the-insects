@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>db4free.net - MySQL Database for free</title>
+<link rel="shortcut icon" href="/images/favicon.png">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="hdrlogo">
+                <p><a href="/"><img class="img-responsive" src="images/db4free-logo.png" alt="db4free.net Logo"></a></p>
+            </div>
+        </div>
+        <div class="col-sm-9 hdrtxt">
+            <p><a href="/">db4free.net<span class="hdrtxt-xtr"> - MySQL Database for free</span></a></p>
+        </div>
+    </div>
+</header>
+
+<div class="intro-block">
+    <div class="row">
+        <div class="col-sm-3 navbar">
+                    <nav class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/"><img class="img-responsive" src="images/db4free-logo.png" alt="db4free.net Logo"></a>
+	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li class="topnav active"><a href="/">Welcome&nbsp;<b class="caret"></b></a></li>
+					<li class="subnav"><a href="/donations.php">Donations</a></li>
+			<li class="subnav"><a href="/translate.php">Translations</a></li>
+			<li class="subnav"><a href="/history.php">Changelog</a></li>
+			<li class="subnav"><a href="/imprint.php">Imprint</a></li>
+					<li class="topnav"><a href="/about.php">Database&nbsp;<b class="caret"></b></a></li>
+								<li class="topnav"><a href="/phpMyAdmin" target="_blank"><b>phpMyAdmin&nbsp;&raquo;</b></a></li>
+			<li class="topnav"><a href="/twitter.php">Twitter</a></li>
+			<li class="topnav"><a href="/blog.php">mpopp.net blog</a></li>
+
+			<li>&nbsp;</li>
+
+			<li class="topnav"><a href="#" onclick="toggleLanguages()" class="cursorpointer">Switch Language&nbsp;<span id="langtoggleicon">[+]</span></a></li>
+		</ul>
+
+		<div id="languagelist" style="display: none">
+			<ul>
+																			<li><a href="/index.php?language=ar" title="Arabic">العربية</a></li>
+																<li><a href="/index.php?language=bg" title="Bulgarian">български език</a></li>
+																<li><a href="/index.php?language=cs" title="Czech">Čeština</a></li>
+																<li><a href="/index.php?language=de" title="German">Deutsch</a></li>
+																<li><a href="/index.php?language=es" title="Spanish">Español</a></li>
+																<li><a href="/index.php?language=fr" title="French">Français</a></li>
+																<li><a href="/index.php?language=hi" title="Hindi">हिन्दी</a></li>
+																<li><a href="/index.php?language=hu" title="Hungarian">Magyar</a></li>
+																<li><a href="/index.php?language=id" title="Indonesian">Bahasa Indonesia</a></li>
+																<li><a href="/index.php?language=it" title="Italian">Italiano</a></li>
+																<li><a href="/index.php?language=ja" title="Japanese">日本語</a></li>
+																<li><a href="/index.php?language=pl" title="Polish">Polski</a></li>
+																<li><a href="/index.php?language=pt" title="Portuguese">Português</a></li>
+																<li><a href="/index.php?language=ro" title="Romanian">Română</a></li>
+																<li><a href="/index.php?language=ru" title="Russian">Русский</a></li>
+																<li><a href="/index.php?language=sk" title="Slovak">Slovenčina</a></li>
+																<li><a href="/index.php?language=sr" title="Serbian">Srpski</a></li>
+																<li><a href="/index.php?language=sv" title="Swedish">Svenska</a></li>
+																<li><a href="/index.php?language=ta" title="Tamil">தமிழ்</a></li>
+																<li><a href="/index.php?language=tr" title="Turkish">Türkçe</a></li>
+																<li><a href="/index.php?language=uk" title="Ukrainian">Українська</a></li>
+																<li><a href="/index.php?language=vi" title="Vietnamese">Tiếng Việt</a></li>
+																<li><a href="/index.php?language=zh" title="Chinese">中文</a></li>
+																<li><a href="/index.php?language=zh-tw" title="Traditional Chinese"> 繁體中文</a></li>
+										</ul>
+		</div>
+	</div>
+</nav>
+<script src="/js/toggle-languages.js"></script>
+                <br>
+
+        <div id="paypalbtn">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+            <input type="hidden" name="currency_code" value="USD">
+
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="3AHLMUS34BQ6S">
+            <input type="image" src="https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+
+
+        </div>
+        <div class="col-sm-9 contentbar">
+                        <div id="title">
+                Welcome to db4free.net
+            </div>
+
+                        <article>
+                <p>db4free.net provides a testing service for the latest - sometimes even development - version of the <a href="https://www.mysql.com/">MySQL Server</a>. You can easily <a href="/signup.php">create an account for free</a> and test your applications, for example to make sure that they still work after a MySQL version update. db4free.net is also a good resource for education and to make yourself familiar with new features that were introduced in new versions.</p>
+
+<p>db4free.net aims to always provide either the latest production release or the latest development release. db4free.net's MySQL server will be updated very soon after a new version is released, usually on the same day or very soon after.</p>
+
+<p>To access your data in a convenient way, db4free.net also provides an up-to-date version of <a href="https://www.phpmyadmin.net">phpMyAdmin</a>. phpMyAdmin will also be updated very frequently, so you always get the very latest.</p>
+
+<h2>What db4free.net is not</h2>
+
+<p>db4free.net is a <b>testing service</b> which means it is not suitable for production. There can be outages, data loss and security features do not meet the standards which you expect from a professional data hosting provider. If you need a MySQL database for production use, please do not use db4free.net!</p>
+
+<h2>Can you help translating db4free.net?</h2>
+
+<p>Do you speak a language well that this website doesn't offer? You can help us translate db4free.net. <a href="/translate.php">Find out how!</a></p>
+
+<h2>Resources</h2>
+
+<p>There is a <a href="https://www.mpopp.net/category/db4free/">db4free.net section</a> in the <a href="https://www.mpopp.net/">mpopp.net blog</a> bringing you the News about db4free.net. Please subscribe to the <a href="https://www.mpopp.net/category/db4free/feed/">RSS Feed</a> to make sure you don't miss any news. db4free.net is also on <a href="/twitter.php">Twitter</a>, another great resource to stay on top of what is happening in the db4free.net world.</p>
+
+<p>The best resources to learn more about MySQL are the <a href="https://dev.mysql.com/">MySQL Developer Zone</a>, the <a href="https://dev.mysql.com/doc/refman/8.0/en/">MySQL Reference Manual</a> and <a href="https://planet.mysql.com/">PlanetMySQL</a>. The MySQL website offers a number of <a href="https://dev.mysql.com/tech-resources/articles/">Developer Articles</a> many of which explain new features that are being introduced in upcoming versions in excellent detail.</p>
+
+<p>If you find a bug in the MySQL Server, please report it in the <a href="https://bugs.mysql.com/">MySQL Bug Tracking System</a>.</p>
+            </article>
+                    </div>
+    </div>
+</div>
+
+<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/js/tracking.js"></script>
+</body>
+</html>
